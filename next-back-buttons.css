@@ -1,0 +1,39 @@
+.button-nav-container {
+  display: flex;
+  justify-content: space-between; /* Pushes one to the far left, one to the far right */
+  align-items: center;            /* Keeps them perfectly aligned in a straight horizontal line */
+  width: 100%;                    /* Spans across the entire width of the page */
+  box-sizing: border-box;         /* Prevents any horizontal scrollbar glitches */
+  
+  /* Optional: Adds safety padding so the buttons don't literally touch the plastic edge of the monitor screen */
+  padding: 0 20px; 
+  
+  /* Optional: Adds space above the buttons if they sit underneath your video */
+  margin-top: 30px; 
+}
+.arrow-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 25px;
+        background-color: #007bff; 
+        color: white;              
+        font-family: sans-serif;
+        font-weight: bold;
+        text-decoration: none;     
+        transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .arrow-btn:hover {
+        background-color: #0056b3; 
+    }
+
+    .arrow-right {
+        padding: 12px 40px 12px 25px; 
+        clip-path: polygon(0% 0%, calc(100% - 20px) 0%, 100% 50%, calc(100% - 20px) 100%, 0% 100%, 15px 50%);
+    }
+
+    .arrow-left {
+      padding: 12px 25px 12px 40px; 
+      clip-path: polygon(20px 0%, 100% 0%, calc(100% - 15px) 50%, 100% 100%, 20px 100%, 0% 50%);
+    }
